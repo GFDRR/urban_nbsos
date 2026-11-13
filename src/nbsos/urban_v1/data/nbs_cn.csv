@@ -1,0 +1,11 @@
+nbs,land_cover,bs_freq
+open_green_space,5,0.2
+urban_forest,3,0.4
+green_corridors,3,0.3
+urban_farming,2,0.1
+inland_wetland,7,0.5
+river_floodplain,7,0.4
+river_renaturation,5,0.2
+terraces_and_slopes,2,0.1
+bioretention_area,7,0.4
+green_roof,5,0.2

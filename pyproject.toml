@@ -1,0 +1,16 @@
+[project]
+name = "nbsos.urban_v1"
+version = "0.1.1"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mypkg = ["*.csv"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+nbsos = "nbsos.urban_v1.cmd:main"
