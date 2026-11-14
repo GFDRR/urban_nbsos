@@ -72,7 +72,6 @@ nbs_list = [
 	NbsTypes.GreenCorridors,
 	NbsTypes.InlandWetlands,
 	NbsTypes.OpenGreenSpace,
-	NbsTypes.RiverFloodplain,
 	NbsTypes.RiverRenaturation,
 	NbsTypes.TerracesAndSlopes,
 ]
@@ -124,9 +123,7 @@ my_scan.run_preparation(
 )
 
 # run suitability model
-my_scan.run_suitability(
-	floodplain_path=floodplain_reference_path,
-)
+my_scan.run_suitability()
 
 # run clustering for visual inspection
 my_scan.explore_clusters()
@@ -208,6 +205,5 @@ my_scan.run_building_solutions(
 )
 
 # close scan, save logs
-my_scan.archive_data()
 my_scan.close()
 
