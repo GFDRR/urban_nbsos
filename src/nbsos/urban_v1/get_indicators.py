@@ -9,6 +9,8 @@ import datetime
 import math
 import xarray as xr
 import rioxarray
+import rasterio
+from rasterio.transform import from_bounds
 from tqdm.auto import tqdm as tqauto
 import time
 
@@ -1056,8 +1058,40 @@ class Indicators:
                                      scale=image['scale'])
             imagr = ds.isel(time=0).rename({'Y': 'y', 'X': 'x'}).transpose('y', 'x').rio.write_crs(f"EPSG:{epsg}")
             output = os.path.join(self.root, 'eo_indicators', f'{image["name"]}.tif')
-            imagr.rio.to_raster(output, compress='lzw')
-            tqauto.write(f' Exported {image["name"]} to GeoTIFF format')
+            
+            # Write using rasterio directly to ensure proper data type handling and no implicit conversions
+            for var_name in imagr.data_vars:
+                data_array = imagr[var_name]
+                
+                # Get the coordinate reference system and geospatial information
+                crs = data_array.rio.crs
+                transform = data_array.rio.transform()
+                
+                # Get data and dtype
+                data = data_array.values
+                dtype = data.dtype
+                
+                # Ensure we have valid nodata value if specified
+                nodata = data_array.rio.nodata
+                
+                # Write to GeoTIFF with explicit control over all parameters
+                with rasterio.open(
+                    output,
+                    'w',
+                    driver='GTiff',
+                    height=data.shape[0],
+                    width=data.shape[1],
+                    count=1,
+                    dtype=dtype,
+                    crs=crs,
+                    transform=transform,
+                    compress='lzw',
+                    nodata=nodata
+                ) as dst:
+                    dst.write(data, 1)
+                
+                tqauto.write(f' Exported {image["name"]} to GeoTIFF format (dtype: {dtype}, shape: {data.shape})')
+                break
 
         #TODO paste the exception here
         except ValueError as e:
