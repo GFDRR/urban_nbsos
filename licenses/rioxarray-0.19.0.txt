@@ -1,0 +1,523 @@
+Package: rioxarray
+Pinned-Version: 0.19.0
+Installed-Distribution-Name: rioxarray
+Installed-Version: 0.19.0
+Summary: geospatial xarray extension powered by rasterio
+Home-Page: 
+License-Field:
+Apache
+
+License-Classifiers:
+- License :: OSI Approved :: Apache Software License
+
+Project-URLs:
+- changelog: https://corteva.github.io/rioxarray/stable/history.html
+- documentation: https://corteva.github.io/rioxarray/
+- homepage: https://corteva.github.io/rioxarray/
+- repository: https://github.com/corteva/rioxarray
+
+Included-License-Text-Files-From-Installed-Distribution:
+- rioxarray-0.19.0.dist-info/licenses/AUTHORS.rst
+- rioxarray-0.19.0.dist-info/licenses/LICENSE
+- rioxarray-0.19.0.dist-info/licenses/LICENSE_datacube
+- rioxarray-0.19.0.dist-info/licenses/LICENSE_xarray
+
+==============================================================================
+BEGIN FILE: rioxarray-0.19.0.dist-info/licenses/AUTHORS.rst
+==============================================================================
+===============
+Contributors ✨
+===============
+
+
+Thanks goes to these wonderful people (`emoji key <https://allcontributors.org/docs/en/emoji-key>`_):
+
+.. raw:: html
+
+    <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+    <!-- prettier-ignore-start -->
+    <!-- markdownlint-disable -->
+    <table>
+      <tr>
+        <td align="center"><a href="https://www.linkedin.com/in/alan-snow-55bb8726/"><img src="https://avatars3.githubusercontent.com/u/8699967?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alan D. Snow</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=snowman2" title="Code">💻</a> <a href="#ideas-snowman2" title="Ideas, Planning, & Feedback">🤔</a> <a href="#question-snowman2" title="Answering Questions">💬</a> <a href="https://github.com/corteva/rioxarray/issues?q=author%3Asnowman2" title="Bug reports">🐛</a> <a href="https://github.com/corteva/rioxarray/commits?author=snowman2" title="Documentation">📖</a> <a href="#example-snowman2" title="Examples">💡</a> <a href="#maintenance-snowman2" title="Maintenance">🚧</a> <a href="https://github.com/corteva/rioxarray/pulls?q=is%3Apr+reviewed-by%3Asnowman2" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/corteva/rioxarray/commits?author=snowman2" title="Tests">⚠️</a></td>
+        <td align="center"><a href="https://github.com/alfredoahds"><img src="https://avatars2.githubusercontent.com/u/16520854?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alfredo Delos Santos</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=alfredoahds" title="Code">💻</a> <a href="#ideas-alfredoahds" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/corteva/rioxarray/pulls?q=is%3Apr+reviewed-by%3Aalfredoahds" title="Reviewed Pull Requests">👀</a></td>
+        <td align="center"><a href="https://github.com/djhoese"><img src="https://avatars3.githubusercontent.com/u/1828519?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Hoese</b></sub></a><br /><a href="#ideas-djhoese" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/corteva/rioxarray/pulls?q=is%3Apr+reviewed-by%3Adjhoese" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/corteva/rioxarray/commits?author=djhoese" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=djhoese" title="Tests">⚠️</a></td>
+        <td align="center"><a href="https://github.com/justingruca"><img src="https://avatars2.githubusercontent.com/u/32334907?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Justin Gruca</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/pulls?q=is%3Apr+reviewed-by%3Ajustingruca" title="Reviewed Pull Requests">👀</a></td>
+        <td align="center"><a href="https://remotepixel.ca"><img src="https://avatars2.githubusercontent.com/u/10407788?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vincent Sarago</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=vincentsarago" title="Documentation">📖</a> <a href="https://github.com/corteva/rioxarray/commits?author=vincentsarago" title="Tests">⚠️</a></td>
+        <td align="center"><a href="http://about.me/rich.signell"><img src="https://avatars1.githubusercontent.com/u/1872600?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rich Signell</b></sub></a><br /><a href="#ideas-rsignell-usgs" title="Ideas, Planning, & Feedback">🤔</a></td>
+        <td align="center"><a href="https://github.com/pmallas"><img src="https://avatars0.githubusercontent.com/u/6051395?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pmallas</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=pmallas" title="Code">💻</a> <a href="#ideas-pmallas" title="Ideas, Planning, & Feedback">🤔</a></td>
+      </tr>
+      <tr>
+        <td align="center"><a href="https://github.com/davidbrochart"><img src="https://avatars2.githubusercontent.com/u/4711805?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Brochart</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=davidbrochart" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=davidbrochart" title="Tests">⚠️</a> <a href="#ideas-davidbrochart" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/corteva/rioxarray/commits?author=davidbrochart" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://github.com/cheginit"><img src="https://avatars2.githubusercontent.com/u/13016644?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Taher Chegini</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=cheginit" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/issues?q=author%3Acheginit" title="Bug reports">🐛</a></td>
+        <td align="center"><a href="http://joehamman.com"><img src="https://avatars3.githubusercontent.com/u/2443309?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joe Hamman</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=jhamman" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/issues?q=author%3Ajhamman" title="Bug reports">🐛</a></td>
+        <td align="center"><a href="https://tomaugspurger.github.io/"><img src="https://avatars.githubusercontent.com/u/1312546?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tom Augspurger</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=TomAugspurger" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/issues?q=author%3ATomAugspurger" title="Bug reports">🐛</a> <a href="#ideas-TomAugspurger" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/corteva/rioxarray/commits?author=TomAugspurger" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://github.com/RichardScottOZ"><img src="https://avatars.githubusercontent.com/u/72196131?v=4?s=100" width="100px;" alt=""/><br /><sub><b>RichardScottOZ</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=RichardScottOZ" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://sites.google.com/view/raybellwaves/home"><img src="https://avatars.githubusercontent.com/u/17162724?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ray Bell</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=raybellwaves" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://bopen.eu/"><img src="https://avatars.githubusercontent.com/u/226037?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alessandro Amici</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=alexamici" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=alexamici" title="Documentation">📖</a> <a href="https://github.com/corteva/rioxarray/commits?author=alexamici" title="Tests">⚠️</a></td>
+      </tr>
+      <tr>
+        <td align="center"><a href="https://github.com/remi-braun"><img src="https://avatars.githubusercontent.com/u/67311115?v=4?s=100" width="100px;" alt=""/><br /><sub><b>remi-braun</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=remi-braun" title="Documentation">📖</a></td>
+        <td align="center"><a href="http://scottyhq.github.io/"><img src="https://avatars.githubusercontent.com/u/3924836?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Scott Henderson</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/issues?q=author%3Ascottyhq" title="Bug reports">🐛</a> <a href="https://github.com/corteva/rioxarray/commits?author=scottyhq" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=scottyhq" title="Tests">⚠️</a></td>
+        <td align="center"><a href="http://andrewannex.com/"><img src="https://avatars.githubusercontent.com/u/2126916?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrew Annex</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=AndrewAnnex" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=AndrewAnnex" title="Documentation">📖</a> <a href="https://github.com/corteva/rioxarray/commits?author=AndrewAnnex" title="Tests">⚠️</a></td>
+        <td align="center"><a href="https://github.com/fbunt"><img src="https://avatars.githubusercontent.com/u/7178572?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fred Bunt</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/issues?q=author%3Afbunt" title="Bug reports">🐛</a> <a href="https://github.com/corteva/rioxarray/commits?author=fbunt" title="Tests">⚠️</a> <a href="https://github.com/corteva/rioxarray/commits?author=fbunt" title="Code">💻</a></td>
+        <td align="center"><a href="https://github.com/MarkusZehner"><img src="https://avatars.githubusercontent.com/u/56972144?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Markus Zehner</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/issues?q=author%3AMarkusZehner" title="Bug reports">🐛</a> <a href="https://github.com/corteva/rioxarray/commits?author=MarkusZehner" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=MarkusZehner" title="Tests">⚠️</a> <a href="#ideas-MarkusZehner" title="Ideas, Planning, & Feedback">🤔</a></td>
+        <td align="center"><a href="http://www.four43.com/"><img src="https://avatars.githubusercontent.com/u/517006?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Seth Miller</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=four43" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=four43" title="Documentation">📖</a> <a href="https://github.com/corteva/rioxarray/commits?author=four43" title="Tests">⚠️</a></td>
+        <td align="center"><a href="https://github.com/mraspaud"><img src="https://avatars.githubusercontent.com/u/167802?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Martin Raspaud</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=mraspaud" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=mraspaud" title="Tests">⚠️</a> <a href="https://github.com/corteva/rioxarray/commits?author=mraspaud" title="Documentation">📖</a> <a href="#ideas-mraspaud" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/corteva/rioxarray/issues?q=author%3Amraspaud" title="Bug reports">🐛</a></td>
+      </tr>
+      <tr>
+        <td align="center"><a href="https://cordmaur.medium.com/"><img src="https://avatars.githubusercontent.com/u/19617404?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mauricio Cordeiro</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/issues?q=author%3Acordmaur" title="Bug reports">🐛</a> <a href="https://github.com/corteva/rioxarray/commits?author=cordmaur" title="Code">💻</a></td>
+        <td align="center"><a href="https://github.com/GCBallesteros"><img src="https://avatars.githubusercontent.com/u/6859287?v=4?s=100" width="100px;" alt=""/><br /><sub><b>GBallesteros</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/issues?q=author%3AGCBallesteros" title="Bug reports">🐛</a> <a href="https://github.com/corteva/rioxarray/commits?author=GCBallesteros" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=GCBallesteros" title="Tests">⚠️</a></td>
+        <td align="center"><a href="https://github.com/apiwat-chantawibul"><img src="https://avatars.githubusercontent.com/u/8740786?v=4?s=100" width="100px;" alt=""/><br /><sub><b>apiwat-chantawibul</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=apiwat-chantawibul" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://mwtoews.github.io/"><img src="https://avatars.githubusercontent.com/u/895458?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mike Taves</b></sub></a><br /><a href="#maintenance-mwtoews" title="Maintenance">🚧</a></td>
+        <td align="center"><a href="https://github.com/Zionett"><img src="https://avatars.githubusercontent.com/u/9539198?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sangzi Liang</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=Zionett" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://github.com/jonasViehweger"><img src="https://avatars.githubusercontent.com/u/53001455?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jonasViehweger</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=jonasViehweger" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/issues?q=author%3AjonasViehweger" title="Bug reports">🐛</a></td>
+        <td align="center"><a href="https://github.com/chbrandt"><img src="https://avatars.githubusercontent.com/u/482051?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carlos H Brandt</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=chbrandt" title="Documentation">📖</a></td>
+      </tr>
+      <tr>
+        <td align="center"><a href="https://github.com/JessicaS11"><img src="https://avatars.githubusercontent.com/u/11756442?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jessica Scheick</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=JessicaS11" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://www.linkedin.com/in/micheleclaus/"><img src="https://avatars.githubusercontent.com/u/31700619?v=4?s=100" width="100px;" alt=""/><br /><sub><b>clausmichele</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/pulls?q=is%3Apr+reviewed-by%3Aclausmichele" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/corteva/rioxarray/commits?author=clausmichele" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://github.com/caldwellst"><img src="https://avatars.githubusercontent.com/u/8086547?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Seth Caldwell</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/issues?q=author%3Acaldwellst" title="Bug reports">🐛</a> <a href="https://github.com/corteva/rioxarray/commits?author=caldwellst" title="Code">💻</a></td>
+        <td align="center"><a href="https://github.com/stefank0"><img src="https://avatars.githubusercontent.com/u/32932217?v=4?s=100" width="100px;" alt=""/><br /><sub><b>stefank0</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=stefank0" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://itcarroll.github.io/"><img src="https://avatars.githubusercontent.com/u/3383837?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ian Carroll</b></sub></a><br /><a href="#maintenance-itcarroll" title="Maintenance">🚧</a></td>
+        <td align="center"><a href="https://github.com/yvonnefroehlich"><img src="https://avatars.githubusercontent.com/u/94163266?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yvonne Fröhlich</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=yvonnefroehlich" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://github.com/Kirill888"><img src="https://avatars.githubusercontent.com/u/1428024?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kirill Kouzoubov</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=Kirill888" title="Code">💻</a></td>
+      </tr>
+      <tr>
+        <td align="center"><a href="https://github.com/xaviernogueira"><img src="https://avatars.githubusercontent.com/u/58796351?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Xavier Nogueira</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/issues?q=author%3Axaviernogueira" title="Bug reports">🐛</a></td>
+        <td align="center"><a href="https://github.com/valanm22"><img src="https://avatars.githubusercontent.com/u/84893551?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Valan Baptist Mathuranayagam</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=valanm22" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://github.com/peterm790"><img src="https://avatars.githubusercontent.com/u/52179978?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Peter Marsh</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=peterm790" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=peterm790" title="Tests">⚠️</a></td>
+        <td align="center"><a href="https://github.com/dluks"><img src="https://avatars.githubusercontent.com/u/4911680?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Lusk</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=dluks" title="Code">💻</a> <a href="https://github.com/corteva/rioxarray/commits?author=dluks" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://github.com/DahnJ"><img src="https://avatars.githubusercontent.com/u/18722560?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Jahn (dahn)</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=DahnJ" title="Documentation">📖</a></td>
+        <td align="center"><a href="https://phofl.github.io/"><img src="https://avatars.githubusercontent.com/u/61934744?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Patrick Hoefler</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/issues?q=author%3Aphofl" title="Bug reports">🐛</a></td>
+        <td align="center"><a href="https://github.com/dzanaga"><img src="https://avatars.githubusercontent.com/u/8113766?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniele Zanaga</b></sub></a><br /><a href="https://github.com/corteva/rioxarray/commits?author=dzanaga" title="Documentation">📖</a></td>
+      </tr>
+    </table>
+
+    <!-- markdownlint-restore -->
+    <!-- prettier-ignore-end -->
+
+    <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the `all-contributors <https://github.com/all-contributors/all-contributors>`_ specification. Contributions of any kind welcome!
+==============================================================================
+END FILE: rioxarray-0.19.0.dist-info/licenses/AUTHORS.rst
+==============================================================================
+
+==============================================================================
+BEGIN FILE: rioxarray-0.19.0.dist-info/licenses/LICENSE
+==============================================================================
+Copyright (c) 2019-2023, Corteva Agriscience™
+   All rights reserved.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+==============================================================================
+END FILE: rioxarray-0.19.0.dist-info/licenses/LICENSE
+==============================================================================
+
+==============================================================================
+BEGIN FILE: rioxarray-0.19.0.dist-info/licenses/LICENSE_datacube
+==============================================================================
+# copy of datacube license
+# https://github.com/opendatacube/datacube-core/blob/1d345f08a10a13c316f81100936b0ad8b1a374eb/LICENSE
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+==============================================================================
+END FILE: rioxarray-0.19.0.dist-info/licenses/LICENSE_datacube
+==============================================================================
+
+==============================================================================
+BEGIN FILE: rioxarray-0.19.0.dist-info/licenses/LICENSE_xarray
+==============================================================================
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. Definitions.
+
+"License" shall mean the terms and conditions for use, reproduction, and
+distribution as defined by Sections 1 through 9 of this document.
+
+"Licensor" shall mean the copyright owner or entity authorized by the copyright
+owner that is granting the License.
+
+"Legal Entity" shall mean the union of the acting entity and all other entities
+that control, are controlled by, or are under common control with that entity.
+For the purposes of this definition, "control" means (i) the power, direct or
+indirect, to cause the direction or management of such entity, whether by
+contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the
+outstanding shares, or (iii) beneficial ownership of such entity.
+
+"You" (or "Your") shall mean an individual or Legal Entity exercising
+permissions granted by this License.
+
+"Source" form shall mean the preferred form for making modifications, including
+but not limited to software source code, documentation source, and configuration
+files.
+
+"Object" form shall mean any form resulting from mechanical transformation or
+translation of a Source form, including but not limited to compiled object code,
+generated documentation, and conversions to other media types.
+
+"Work" shall mean the work of authorship, whether in Source or Object form, made
+available under the License, as indicated by a copyright notice that is included
+in or attached to the work (an example is provided in the Appendix below).
+
+"Derivative Works" shall mean any work, whether in Source or Object form, that
+is based on (or derived from) the Work and for which the editorial revisions,
+annotations, elaborations, or other modifications represent, as a whole, an
+original work of authorship. For the purposes of this License, Derivative Works
+shall not include works that remain separable from, or merely link (or bind by
+name) to the interfaces of, the Work and Derivative Works thereof.
+
+"Contribution" shall mean any work of authorship, including the original version
+of the Work and any modifications or additions to that Work or Derivative Works
+thereof, that is intentionally submitted to Licensor for inclusion in the Work
+by the copyright owner or by an individual or Legal Entity authorized to submit
+on behalf of the copyright owner. For the purposes of this definition,
+"submitted" means any form of electronic, verbal, or written communication sent
+to the Licensor or its representatives, including but not limited to
+communication on electronic mailing lists, source code control systems, and
+issue tracking systems that are managed by, or on behalf of, the Licensor for
+the purpose of discussing and improving the Work, but excluding communication
+that is conspicuously marked or otherwise designated in writing by the copyright
+owner as "Not a Contribution."
+
+"Contributor" shall mean Licensor and any individual or Legal Entity on behalf
+of whom a Contribution has been received by Licensor and subsequently
+incorporated within the Work.
+
+2. Grant of Copyright License.
+
+Subject to the terms and conditions of this License, each Contributor hereby
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+irrevocable copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the Work and such
+Derivative Works in Source or Object form.
+
+3. Grant of Patent License.
+
+Subject to the terms and conditions of this License, each Contributor hereby
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+irrevocable (except as stated in this section) patent license to make, have
+made, use, offer to sell, sell, import, and otherwise transfer the Work, where
+such license applies only to those patent claims licensable by such Contributor
+that are necessarily infringed by their Contribution(s) alone or by combination
+of their Contribution(s) with the Work to which such Contribution(s) was
+submitted. If You institute patent litigation against any entity (including a
+cross-claim or counterclaim in a lawsuit) alleging that the Work or a
+Contribution incorporated within the Work constitutes direct or contributory
+patent infringement, then any patent licenses granted to You under this License
+for that Work shall terminate as of the date such litigation is filed.
+
+4. Redistribution.
+
+You may reproduce and distribute copies of the Work or Derivative Works thereof
+in any medium, with or without modifications, and in Source or Object form,
+provided that You meet the following conditions:
+
+You must give any other recipients of the Work or Derivative Works a copy of
+this License; and
+You must cause any modified files to carry prominent notices stating that You
+changed the files; and
+You must retain, in the Source form of any Derivative Works that You distribute,
+all copyright, patent, trademark, and attribution notices from the Source form
+of the Work, excluding those notices that do not pertain to any part of the
+Derivative Works; and
+If the Work includes a "NOTICE" text file as part of its distribution, then any
+Derivative Works that You distribute must include a readable copy of the
+attribution notices contained within such NOTICE file, excluding those notices
+that do not pertain to any part of the Derivative Works, in at least one of the
+following places: within a NOTICE text file distributed as part of the
+Derivative Works; within the Source form or documentation, if provided along
+with the Derivative Works; or, within a display generated by the Derivative
+Works, if and wherever such third-party notices normally appear. The contents of
+the NOTICE file are for informational purposes only and do not modify the
+License. You may add Your own attribution notices within Derivative Works that
+You distribute, alongside or as an addendum to the NOTICE text from the Work,
+provided that such additional attribution notices cannot be construed as
+modifying the License.
+You may add Your own copyright statement to Your modifications and may provide
+additional or different license terms and conditions for use, reproduction, or
+distribution of Your modifications, or for any such Derivative Works as a whole,
+provided Your use, reproduction, and distribution of the Work otherwise complies
+with the conditions stated in this License.
+
+5. Submission of Contributions.
+
+Unless You explicitly state otherwise, any Contribution intentionally submitted
+for inclusion in the Work by You to the Licensor shall be under the terms and
+conditions of this License, without any additional terms or conditions.
+Notwithstanding the above, nothing herein shall supersede or modify the terms of
+any separate license agreement you may have executed with Licensor regarding
+such Contributions.
+
+6. Trademarks.
+
+This License does not grant permission to use the trade names, trademarks,
+service marks, or product names of the Licensor, except as required for
+reasonable and customary use in describing the origin of the Work and
+reproducing the content of the NOTICE file.
+
+7. Disclaimer of Warranty.
+
+Unless required by applicable law or agreed to in writing, Licensor provides the
+Work (and each Contributor provides its Contributions) on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied,
+including, without limitation, any warranties or conditions of TITLE,
+NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are
+solely responsible for determining the appropriateness of using or
+redistributing the Work and assume any risks associated with Your exercise of
+permissions under this License.
+
+8. Limitation of Liability.
+
+In no event and under no legal theory, whether in tort (including negligence),
+contract, or otherwise, unless required by applicable law (such as deliberate
+and grossly negligent acts) or agreed to in writing, shall any Contributor be
+liable to You for damages, including any direct, indirect, special, incidental,
+or consequential damages of any character arising as a result of this License or
+out of the use or inability to use the Work (including but not limited to
+damages for loss of goodwill, work stoppage, computer failure or malfunction, or
+any and all other commercial damages or losses), even if such Contributor has
+been advised of the possibility of such damages.
+
+9. Accepting Warranty or Additional Liability.
+
+While redistributing the Work or Derivative Works thereof, You may choose to
+offer, and charge a fee for, acceptance of support, warranty, indemnity, or
+other liability obligations and/or rights consistent with this License. However,
+in accepting such obligations, You may act only on Your own behalf and on Your
+sole responsibility, not on behalf of any other Contributor, and only if You
+agree to indemnify, defend, and hold each Contributor harmless for any liability
+incurred by, or claims asserted against, such Contributor by reason of your
+accepting any such warranty or additional liability.
+
+END OF TERMS AND CONDITIONS
+
+APPENDIX: How to apply the Apache License to your work
+
+To apply the Apache License to your work, attach the following boilerplate
+notice, with the fields enclosed by brackets "[]" replaced with your own
+identifying information. (Don't include the brackets!) The text should be
+enclosed in the appropriate comment syntax for the file format. We also
+recommend that a file or class name and description of purpose be included on
+the same "printed page" as the copyright notice for easier identification within
+third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+==============================================================================
+END FILE: rioxarray-0.19.0.dist-info/licenses/LICENSE_xarray
+==============================================================================
